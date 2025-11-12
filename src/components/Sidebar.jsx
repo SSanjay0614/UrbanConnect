@@ -9,14 +9,14 @@ export default function Sidebar() {
     { to: '/feedback', label: 'Submit Feedback' },
     { to: '/map', label: 'Map Report' },
     { to: '/vote', label: 'Vote Projects' },
-    { to: '/transparency/status', label: 'Project Status' },
-    { to: '/transparency/reports', label: 'Reports' },
+    { to: '/transparency', label: 'Project Transparency' },
   ];
 
   const plannerLinks = role === 'Planner' ? [
     { to: '/planner/dashboard', label: 'Planner Dashboard' },
     { to: '/planner/projects', label: 'Manage Projects' },
     { to: '/planner/budget', label: 'Budget Allocator' },
+    { to: '/planner/reports', label: 'AI Reports' },
   ] : [];
 
   const adminLinks = role === 'Admin' ? [

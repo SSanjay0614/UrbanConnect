@@ -12,6 +12,7 @@ export default function TopActions({ role = 'Citizen' }) {
         <>
           <button className="btn btn-primary" onClick={() => navigate('/feedback')}>Submit Feedback</button>
           <button className="btn" onClick={() => navigate('/vote')}>Explore Projects</button>
+          <button className="btn" onClick={() => navigate('/transparency')}>Project Transparency</button>
           <button className="btn" onClick={() => navigate('/map')}>Report on Map</button>
           <button className="btn" onClick={() => navigate('/community')}>Community Space</button>
         </>
@@ -20,7 +21,7 @@ export default function TopActions({ role = 'Citizen' }) {
         <>
           <button className="btn btn-primary" onClick={() => navigate('/planner/projects')}>Manage Projects</button>
           <button className="btn" onClick={() => navigate('/planner/budget')}>Allocate Budget</button>
-          <button className="btn" onClick={() => navigate('/transparency/status')}>View Status</button>
+          <button className="btn" onClick={() => navigate('/planner/reports')}>AI Reports</button>
         </>
       ) : null}
       {isAdmin ? (
